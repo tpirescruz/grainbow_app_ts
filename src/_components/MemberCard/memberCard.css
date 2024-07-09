@@ -1,0 +1,33 @@
+.person-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 50%;
+}
+
+.person-card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.person-card-header h3{
+    margin-right: .5rem;
+}
+
+.person-card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.card-action {
+    border-left: 2px grey dashed; 
+    height: 100%;
+}
+
+.card-action:hover {
+    background-color: gray;
+}
