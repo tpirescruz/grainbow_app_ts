@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: space-between;
     min-width: 50%;
+    height: 7rem;
 }
 
 .person-card-header {
@@ -24,9 +25,15 @@
 }
 
 .card-action {
+    border-radius: 0 10px 10px 0;
     border-left: 2px grey dashed;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: .3s;
 }
 
 .card-action:hover {
-    background-color: gray;
+    transition: .3s;
+    background-color: #31363f;
 }
