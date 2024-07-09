@@ -13,7 +13,7 @@
     flex-wrap: wrap;
 }
 
-.person-card-header h3{
+.person-card-header h3 {
     margin-right: .5rem;
 }
 
@@ -24,8 +24,7 @@
 }
 
 .card-action {
-    border-left: 2px grey dashed; 
-    height: 100%;
+    border-left: 2px grey dashed;
 }
 
 .card-action:hover {

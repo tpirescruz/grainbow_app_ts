@@ -19,11 +19,6 @@ function App() {
     setPersons(deletePersonFromStorage(personToBeDeleted))
   }
 
-  const addTest = () => {
-    setPersons(addPersonToStorage({ id: 0, name: "Jean", lastName: "Dujardin", age: 3, height: 30 }))
-  }
-
-
   const addNewPerson = (newPerson: Person) => {
     setPersons(addPersonToStorage(newPerson))
   }
@@ -35,7 +30,6 @@ function App() {
         <h2>Application de test</h2>
       </header>
       <main>
-        <Button outlined onclick={() => addTest()} text='Ajouter test' />
         <div className="person_container">
           <Button outlined onclick={() => setAddPopupOpen(true)} text='Ajouter une personne' />
           {persons?.map((it, index) => (<MemberCard key={index} person={it} deletionFunction={deletePerson} />))}

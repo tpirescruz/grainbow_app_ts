@@ -11,7 +11,7 @@ type AddPopupProps = {
 const AddPopup: FC<AddPopupProps> = ({ closePopupSetter, addNewPerson }) => {
     const [personToAdd, setPersonToAdd] = useState<Person>({ id: 0, name: "", lastName: "" })
 
-    // VALIDATORS 
+    // VALIDATORS (JUST TESTING)
     const validateName = (): boolean => {
         return personToAdd.name.length > 0  
     }
@@ -51,7 +51,7 @@ const AddPopup: FC<AddPopupProps> = ({ closePopupSetter, addNewPerson }) => {
                 </form>
                 <div className="form-card-footer">
                         <Button outlined text="Annuler" onclick={() => closePopupSetter(false)} />
-                        <Button outlined text="Ajouter" disabled={!validatePerson()} onclick={() => addNewPerson(personToAdd)}/>
+                        <Button outlined text="Ajouter" disabled={!validatePerson()} onclick={() => {addNewPerson(personToAdd); closePopupSetter(false)}}/>
                     </div>
             </section>
         </div>
